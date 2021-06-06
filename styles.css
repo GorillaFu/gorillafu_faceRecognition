@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.picture {
+  width: 500px;
+  height: 450px;
+  border: 1px solid black;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 20px;
+  /*justify-content: center;*/
+}
+
+.file {
+  position: relative;
+  border: 1px solid black;
+  top: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.file > button {
+  display: flex;
+  position: relative;
+}
+
+.options button {
+  margin: 30px;
+  border: black;
+  width: 300px;
+  height: 100px;
+  background-color: lightblue;
+  font-size: x-large;
+  font-style: ;
+}
