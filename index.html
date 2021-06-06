@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/pictures.css">
+        <title>Find my face</title>        
+    </head>
+    <body>
+        <header>
+            
+        </header>
+        <div class="container">
+        <section class="options">
+            <button>Find my face</button>
+        </section>
+        <section class="picture">
+            <div class="file">
+                <form action="http://localhost:5000/uploader" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file" />
+                    <input type="button" />
+                    <!--<button>Select a file</button>
+                    <button>Upload image</button>-->
+                </form>
+            </div>
+        </section>
+        <section class="picture">
+            <div class="file">
+                <button>Select a file</button>
+                <button>Upload image</button>
+            </div>
+        </section>
+        </div>
+    </body>
+</html>
