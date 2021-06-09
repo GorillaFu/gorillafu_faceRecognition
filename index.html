@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../styles/pictures.css">
-        <title>Find my face</title>        
-    </head>
-    <body>
-        <header>
-            
-        </header>
-        <div class="container">
-        <section class="options">
-            <button>Find my face</button>
-        </section>
-        <section class="picture">
-            <div class="file">
-                <form action="http://localhost:5000/uploader" method="POST" enctype="multipart/form-data">
-                    <input type="file" name="file" />
-                    <input type="button" />
-                    <!--<button>Select a file</button>
-                    <button>Upload image</button>-->
-                </form>
-            </div>
-        </section>
-        <section class="picture">
-            <div class="file">
-                <button>Select a file</button>
-                <button>Upload image</button>
-            </div>
-        </section>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Find my face</title>
+  </head>
+  <body>
+    <header></header>
+
+    <div class="container">
+      <section class="options">
+        <button>Find my face</button>
+      </section>
+
+      <section class="picture">
+        <div class="image_preview" id="imagePreview">
+          <img src="" alt="Image Preview" class="preview_image" />
+          <span class="preview_text">Image Preview</span>
         </div>
-    </body>
+        <form method="POST" enctype="multipart/form-data">
+          <div class="files">
+            <label for="image_uploads"
+              >Choose image to upload (PNG or JPG)</label
+            >
+            <input
+              type="file"
+              id="image_uploads"
+              accept=".jpg, .png"
+              name="image_uploads"
+            />
+          </div>
+          <div class="preview">
+            <p>No files currently selected for upload</p>
+          </div>
+          <div>
+            <button>Submit</button>
+          </div>
+        </form>
+      </section>
+      <script type="text/javascript" src="file_selection.js"></script>
+      <script type="text/javascript" src="image_preview.js"></script>
+    </div>
+  </body>
 </html>
