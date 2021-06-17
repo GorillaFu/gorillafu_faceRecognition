@@ -29,7 +29,7 @@
     color: #cccccc;
 }
 
-.preview_image {
+.preview_image_one, .preview_image_two {
     display: none;
     width: 100%;
     height: 100%;
