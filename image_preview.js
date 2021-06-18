@@ -31,8 +31,8 @@ const previewImage2 = previewContainer2.querySelector(".preview_image_two");
 const previewText2 = previewContainer2.querySelector(".preview_text_two");
 
 files2.addEventListener("change", function () {
-  const file = this.files[0];
-  if (file) {
+  const file2 = this.files[0];
+  if (file2) {
     const reader = new FileReader();
     previewText2.style.display = "none";
     previewImage2.style.display = "block";
@@ -40,7 +40,7 @@ files2.addEventListener("change", function () {
       console.log(this);
       previewImage2.setAttribute("src", this.result);
     });
-    reader.readAsDataURL(file);
+    reader.readAsDataURL(file2);
   } else {
     previewText2.style.display = null;
     previewImage2.style.display = null;
