@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8"/>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <link rel="icon" type="image/x-icon" href="images/favicon/find_my_face_favicon.ico"/>
         <link rel="stylesheet" href="styles/markup.css"/>
         <link rel="stylesheet" href="styles/picture.css"/>
         <title>Find my face</title>
@@ -10,9 +11,23 @@
 
     <body>
         <div class="container">
-            <header>
-                <h1>Find My Face</h1>
-            </header>
+          <nav id="nav_one">
+            <div id="nav_list">
+              <ul>
+                <li>About</li>
+                <li>How to</li>
+                <li>Team</li>
+              </ul>
+            </div>
+          </nav>
+
+            <div id="header_logo">
+                <img src="images/web_pictures/Find_My_Face_logo.png" alt="Find My Face Logo" id="pic_logo">
+            </div>
+
+            <div id="about">
+              <h1>Este es el about</h1>
+            </div>
 
             <div class="btn-search">
                 <button>Find</button>
@@ -38,10 +53,11 @@
                             name="image_uploads"
                           />
                         </div>
-                        
+                        <!--
                         <div class="preview">
                           <p>No files currently selected for upload</p>
                         </div>
+                      -->
                     </form>
                 </div>
 
@@ -64,10 +80,11 @@
                             name="image_uploads"
                           />
                         </div>
-                        
+                        <!--
                         <div class="preview2">
                           <p>No files currently selected for upload</p>
                         </div>
+                      -->
                     </form>
                 </div>
             </div>
